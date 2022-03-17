@@ -2777,7 +2777,7 @@ form.trackForm button {
 
 @media (min-width: 992px) {
     .header_container {
-        background-color: #1f425d;
+        background-color: #0e2952;
     }
 
     .header_container::before, .header_container::after {
@@ -2953,7 +2953,7 @@ form.trackForm button {
     z-index: 100;
     position: absolute;
     content: "";
-    background-color: #1f425d;
+    background-color: #0e2952;
 }
 
 @media (min-width: 992px) {
@@ -2991,7 +2991,7 @@ form.trackForm button {
 
 .footer-top {
     position: relative;
-    background-color: #1f425d;
+    background-color: #0e2952;
     color: #9eb7cb;
     padding: 30px 0;
 }
@@ -3002,12 +3002,7 @@ form.trackForm button {
     }
 }
 
-.footer-top::before, .footer-top::after {
-    z-index: 100;
-    position: absolute;
-    content: "";
-    background-color: #1f425d;
-}
+
 
 @media (min-width: 992px) {
     .footer-top::before {
