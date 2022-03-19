@@ -456,6 +456,7 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+
     }
 }
 
