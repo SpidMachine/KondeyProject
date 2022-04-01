@@ -2632,8 +2632,9 @@ form.trackForm button {
         width: 270px;
         height: 120px;
         margin-bottom: 0;
-        padding-top: 0;
+        padding-top: 22px;
         padding-bottom: 0;
+        text-align: center;
         border-bottom: 0;
     }
 }
@@ -2661,7 +2662,7 @@ form.trackForm button {
 
 .header__logo img {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 15px;
     width: 60%;
 }
@@ -3001,7 +3002,6 @@ form.trackForm button {
         padding: 55px 0 35px 0;
     }
 }
-
 
 
 @media (min-width: 992px) {

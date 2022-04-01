@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Контактная информация - ООО «Ритм»</title>
+    <title>Контактная информация - «AWOR»</title>
     <meta name="description" content="Контактная информация">
     <meta name="keywords" content="Контакты">
     <link rel="shortcut icon" type="image/x-icon" href="favicon-1.ico">
@@ -16,8 +16,12 @@
 
     <link href="templates/all/css/magnific-popup-1.css" rel="stylesheet">
     <link href="css-1?family=Roboto%3A400%2C700%7CSource+Sans+Pro%3A700%2C900&amp;subset=cyrillic" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
 
-    <script src="templates/all/js/modernizr.custom.24530-1.js" type="text/javascript"></script>
+<!--    <script src="templates/all/js/modernizr.custom.24530-1.js" type="text/javascript"></script>-->
     <meta name="yandex-verification" content="e2b5bd1bc8a72bdb">
 </head>
 <body>
@@ -30,7 +34,7 @@
 
         <div class="container">
 
-            <div class="top__tagline">Работаем в Москве и Москвоской области</div>
+            <div class="top__tagline">Работаем в Москве и Московской области</div>
 
 
         </div><!-- /.container -->
@@ -270,14 +274,73 @@
                                                                                                style="width:100%;padding:4px"></textarea>
                             </td>
                         </tr>
+
+
+
                         <tr>
-                            <td><input type="submit" class="btn btn-primary" value="Отправить"></td>
-                            <td></td>
-                            <td></td>
+                            <td><input type="submit" id="btn" class="btn btn-primary" value="Отправить"></td>
                         </tr>
+                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                        <script>
+
+                            var btn = document.getElementById('btn');
+
+                            btn.addEventListener('click', function () {
+                                alert("Сообщение успешно отправилось!");
+                            })
+                        </script>
                     </table>
                 </form>
-                <span style="color:red">*</span> - обязательно для заполнения.
+                <script>
+
+
+                    // function formatParams( params ){
+                    //     return "?" + Object
+                    //         .keys(params)
+                    //         .map(function(key){
+                    //             return key+"="+encodeURIComponent(params[key])
+                    //         })
+                    //         .join("&")
+                    // }
+                    // const form  = document.getElementById('formContact');
+                    //
+                    // form.addEventListener('submit', (event) => {
+                    //
+                    //     const name = document.getElementById("name").value;
+                    //     const email = document.getElementById("email").value;
+                    //     const subject = document.getElementById("subject").value;
+                    //     const message = document.getElementById("message").value;
+                    //     let data = {
+                    //         'name': name,
+                    //         'email': email,
+                    //         'phone': subject,
+                    //         'description': message,
+                    //         'websiteName': 'awor.ru'};
+                    //
+                    //     let urlParameters = Object.entries(data).map(e => e.join('=')).join('&');
+                    //
+                    //
+                    //     let url = "http://78.40.219.202:80/online-app/create?" + Object.entries(data).map(e => e.join('=')).join('&');;
+                    //
+                    //     let xhr = new XMLHttpRequest();
+                    //     xhr.open("POST", url);
+                    //
+                    //     xhr.setRequestHeader("Accept", "*/*");
+                    //     xhr.setRequestHeader("Content-Type", "application/json");
+                    //
+                    //     xhr.onreadystatechange = function () {
+                    //         if (xhr.readyState === 4) {
+                    //             console.log(xhr.responseText);
+                    //         }};
+                    //
+                    //
+                    //
+                    //     xhr.send();
+                    //
+                    //     event.preventDefault();
+                    // });
+
+                </script>
             </div><!-- /.col -->
 
         </div><!-- /.row -->
