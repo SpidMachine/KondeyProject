@@ -294,51 +294,51 @@
                 <script>
 
 
-                    // function formatParams( params ){
-                    //     return "?" + Object
-                    //         .keys(params)
-                    //         .map(function(key){
-                    //             return key+"="+encodeURIComponent(params[key])
-                    //         })
-                    //         .join("&")
-                    // }
-                    // const form  = document.getElementById('formContact');
-                    //
-                    // form.addEventListener('submit', (event) => {
-                    //
-                    //     const name = document.getElementById("name").value;
-                    //     const email = document.getElementById("email").value;
-                    //     const subject = document.getElementById("subject").value;
-                    //     const message = document.getElementById("message").value;
-                    //     let data = {
-                    //         'name': name,
-                    //         'email': email,
-                    //         'phone': subject,
-                    //         'description': message,
-                    //         'websiteName': 'awor.ru'};
-                    //
-                    //     let urlParameters = Object.entries(data).map(e => e.join('=')).join('&');
-                    //
-                    //
-                    //     let url = "http://78.40.219.202:80/online-app/create?" + Object.entries(data).map(e => e.join('=')).join('&');;
-                    //
-                    //     let xhr = new XMLHttpRequest();
-                    //     xhr.open("POST", url);
-                    //
-                    //     xhr.setRequestHeader("Accept", "*/*");
-                    //     xhr.setRequestHeader("Content-Type", "application/json");
-                    //
-                    //     xhr.onreadystatechange = function () {
-                    //         if (xhr.readyState === 4) {
-                    //             console.log(xhr.responseText);
-                    //         }};
-                    //
-                    //
-                    //
-                    //     xhr.send();
-                    //
-                    //     event.preventDefault();
-                    // });
+                    function formatParams( params ){
+                        return "?" + Object
+                            .keys(params)
+                            .map(function(key){
+                                return key+"="+encodeURIComponent(params[key])
+                            })
+                            .join("&")
+                    }
+                    const form  = document.getElementById('formContact');
+
+                    form.addEventListener('submit', (event) => {
+
+                        const name = document.getElementById("name").value;
+                        const email = document.getElementById("email").value;
+                        const subject = document.getElementById("subject").value;
+                        const message = document.getElementById("message").value;
+                        let data = {
+                            'name': name,
+                            'email': email,
+                            'phone': subject,
+                            'description': message,
+                            'websiteName': 'awor.ru'};
+
+                        let urlParameters = Object.entries(data).map(e => e.join('=')).join('&');
+
+
+                        let url = "http://78.40.219.202:80/online-app/create?" + Object.entries(data).map(e => e.join('=')).join('&');;
+
+                        let xhr = new XMLHttpRequest();
+                        xhr.open("POST", url);
+
+                        xhr.setRequestHeader("Accept", "*/*");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4) {
+                                console.log(xhr.responseText);
+                            }};
+
+
+
+                        xhr.send();
+
+                        event.preventDefault();
+                    });
 
                 </script>
             </div><!-- /.col -->
